@@ -64,6 +64,16 @@
 			"style": {
 				"navigationStyle": "custom"
 			}
+		}, {
+			"path": "selfStudyRoomSelection/index",
+			"style": {
+				"navigationStyle": "custom"
+			}
+		}, {
+			"path": "selfStudyRoomSelection/roomDetail",
+			"style": {
+				"navigationStyle": "custom"
+			}
 		}]
 	}],
 	"globalStyle": {

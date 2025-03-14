@@ -69,7 +69,7 @@
 			// 切换tab
 			changeTab(index) {
 				const that = this
-				uni.switchTab({
+				uni.redirectTo({
 					url: this.tabbarList[index].url,
 					// success() {
 					// 	that.$store.commit('CHANGE_TAB', index)

@@ -12,7 +12,7 @@
 		</view>
 
 		<view class="time-box">
-			<image class="icon-time" src="/subPackage/time/static/icon_time.jpg" mode=""></image>
+			<image class="icon-time" src="/subPackage/time/static/icon.png" mode=""></image>
 		</view>
 
 		<view class="opera-btn">

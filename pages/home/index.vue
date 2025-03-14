@@ -245,7 +245,9 @@
 			handleClick(val) {
 				console.log(val)
 				if (val === 0) {
-					
+					uni.navigateTo({
+						url: '../../subPackage/selfStudyRoomSelection/index'
+					})
 				} else if (val === 1) {
 					uni.navigateTo({
 						url: '/pages/home/checkGroup'
