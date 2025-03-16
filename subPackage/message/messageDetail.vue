@@ -2,7 +2,7 @@
 	<view class="container">
 		<view class="cus-header" :style="{'min-height': navBarHeight + 'px', 'padding-top': statusBarHeight + 'px'}">
 			<image class="icon" src="/static/home/icon_back.png" @click="handleBack()"></image>
-			<image class="head" src="../static/message/pic_head1.jpg"></image>
+			<image class="head" src="../../static/head/head (4).png"></image>
 			<view class="title">晴晴</view>
 		</view>
 
@@ -12,13 +12,13 @@
 					<view class="time" v-if="message.time">{{message.time}}</view>
 					<view class="message-content" style="justify-content: flex-end;">
 						<view class="message">{{message.content}}</view>
-						<image class="head" src="/static/home/pic_head3.jpg" mode=""></image>
+						<image class="head" src="../../static/head/head (2).png" mode=""></image>
 					</view>
 				</view>
 				<view class="" v-else>
 					<view class="time" v-if="message.time">{{message.time}}</view>
 					<view class="message-content">
-						<image class="head" src="/static/home/pic_head1.jpg" mode=""></image>
+						<image class="head" src="../../static/head/head (4).png" mode=""></image>
 						<view class="message">{{message.content}}</view>
 					</view>
 				</view>

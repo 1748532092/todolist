@@ -277,6 +277,10 @@ export default {
 				uni.navigateTo({
 					url: '/pages/home/medalWall'
 				})
+			} else if (val === 3) {
+				uni.redirectTo({
+					url: '../../subPackage/count/index'
+				})
 			}
 		}
 	}
@@ -285,6 +289,7 @@ export default {
 
 <style scoped lang="scss">
 .container {
+	min-height: 100vh;
 	background-color: #ebebc2;
 	padding-bottom: 154rpx;
 

@@ -45,7 +45,7 @@
 		</div>
 
 		<!-- 弹窗 -->
-		<uni-popup ref="showPopup" background-color="#fff" type="center">
+		<uni-popup ref="showPopup" background-color="#fff">
 			<view class="popu-box">
 				<view class="popup-content">
 					<view>本次专注时常为15分钟， 是否继续？</view>
@@ -95,7 +95,7 @@ export default {
 	methods: {
 		handleOperate(val) {
 			if (val == 2) {
-				this.$refs.showPopup.open()
+				this.$refs.showPopup.open('center')
 			} else {
 				this.status = val
 			}

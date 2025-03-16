@@ -106,6 +106,7 @@
 
 <style scoped lang="scss">
 	.container {
+		min-height: 100vh;
 		background-color: #EBEBC2;
 
 		.cus-header {

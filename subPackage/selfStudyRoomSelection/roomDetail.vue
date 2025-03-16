@@ -1,10 +1,7 @@
 <template>
-	<view class="container">
-		<view @click="handleSeatClick($event)">
-			<image class="bg" src="../static/selfStudyRoomSelection/pic_room.png" mode=""></image>
-		</view>
+	<view class="container" @click.stop="handleSeatClick($event)">
 		<view class="cus-header" :style="{'min-height': navBarHeight + 'px', 'padding-top': statusBarHeight + 'px'}">
-			<image class="icon" src="/static/home/icon_back.png" @click="handleBack()"></image>
+			<image class="icon" src="/static/home/icon_back.png" @click.stop="handleBack()"></image>
 		</view>
 
 		<view class="room-info">
@@ -13,7 +10,7 @@
 			<view class="num">当前专注人数：{{perNum}}人</view>
 		</view>
 
-		<view class="" v-if="show" :style="{'position': 'absolute', 'top':yLabel + 'px', 'left': xLabel + 'px'}">
+		<view class="" v-show="show" :style="{'position': 'absolute', 'top':yLabel + 'px', 'left': xLabel + 'px'}">
 			<image style="width: 45px;height:45px" src="../static/selfStudyRoomSelection/icon_active.png"
 				mode=""></image>
 			<view class="seat-text">
@@ -26,8 +23,8 @@
 			<view class="content">
 				<view class="title">是否落座</view>
 				<view class="btn">
-					<view class="item" @click="cancel">离开</view>
-					<view class="item" @click="confirm">是</view>
+					<view class="item" @click.stop="cancel">离开</view>
+					<view class="item" @click.stop="confirm">是</view>
 				</view>
 			</view>
 		</uni-popup>
@@ -60,11 +57,12 @@
 				this.yLabel = parseInt(e.detail.y)
 			},
 			cancel() {
+				this.show = false
 				this.$refs.popup.close()
 			},
 			confirm() {
-				this.$refs.popup.close()
 				this.show = true
+				this.$refs.popup.close()
 			}
 		}
 	}
@@ -74,6 +72,8 @@
 	.container {
 		position: relative;
 		height: 100vh;
+		background-image: url('../static/selfStudyRoomSelection/pic_room.png');
+		background-size: 100% 100%;
 
 		.bg {
 			position: absolute;
@@ -98,7 +98,7 @@
 
 		.room-info {
 			position: absolute;
-			top: 120rpx;
+			top: 9%;
 			left: 36%;
 
 			.room-name {
