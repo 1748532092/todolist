@@ -1,6 +1,6 @@
 <template>
 	<view class="container">
-		<image class="bg" src="/subPackage/selfStudyRoomSelection/static/pic_bg.png" mode=""></image>
+		<image class="bg" src="../static/selfStudyRoomSelection/pic_bg.png" mode=""></image>
 		<view class="cus-header" :style="{'min-height': navBarHeight + 'px', 'padding-top': statusBarHeight + 'px'}">
 			<image class="icon" src="/static/home/icon_back.png" @click="handleBack()"></image>
 			<view class="title">自习室</view>
@@ -14,7 +14,7 @@
 					</view>
 				</picker>
 				<image style="width: 30rpx;height: 30rpx;margin-left: 10rpx"
-					src="/subPackage/time/static/icon_triangle.png" mode=""></image>
+					src="../static/time/icon_triangle.png" mode=""></image>
 			</view>
 
 			<view class="room-list">

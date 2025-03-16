@@ -7,33 +7,33 @@
 		</view>
 		<view class="top">
 			<text>今日速度冠军</text>
-			<image class="head" src="/static/home/pic_head1.jpg" mode=""></image>
+			<image class="head" src="/static/head/head (9).png" mode=""></image>
 		</view>
 		<view class="top">
 			<text>自律总榜</text>
-			<image class="head" src="/static/home/pic_head1.jpg" mode=""></image>
-			<image class="head" src="/static/home/pic_head2.jpg" mode=""></image>
-			<image class="head" src="/static/home/pic_head3.jpg" mode=""></image>
+			<image class="head" src="/static/head/head (1).png" mode=""></image>
+			<image class="head" src="/static/head/head (2).png" mode=""></image>
+			<image class="head" src="/static/head/head (3).png" mode=""></image>
 		</view>
 		<view class="remind">提醒伙伴</view>
 		<view class="message-box">
 			<view class="time">02-12 8：24</view>
 			<view class="message-content">
-				<image class="head" src="/static/home/pic_head1.jpg" mode=""></image>
+				<image class="head" src="/static/head/head (1).png" mode=""></image>
 				<view class="message">#试卷一套</view>
 			</view>
 			<view class="message-content">
-				<image class="head" src="/static/home/pic_head2.jpg" mode=""></image>
+				<image class="head" src="/static/head/head (2).png" mode=""></image>
 				<view class="message">#早起</view>
 			</view>
 			<view class="time">02-12 11：40</view>
 			<view class="message-content">
-				<image class="head" src="/static/home/pic_head1.jpg" mode=""></image>
+				<image class="head" src="/static/head/head (1).png" mode=""></image>
 				<view class="message">#预习新课</view>
 			</view>
 			<view class="message-content" style="justify-content: flex-end;">
 				<view class="message">#仰卧起坐100个</view>
-				<image class="head" src="/static/home/pic_head3.jpg" mode=""></image>
+				<image class="head" src="/static/head/head (2).png" mode=""></image>
 			</view>
 		</view>
 

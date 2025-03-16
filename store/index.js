@@ -1,6 +1,6 @@
-//引用Vuex
 import Vue from 'vue'
 import Vuex from 'vuex'
+
 Vue.use(Vuex)
 
 //实例store对象
@@ -10,6 +10,7 @@ const store = new Vuex.Store({
 	},
 	mutations: {
 		CHANGE_TAB(state, value) {
+			console.log('aa')
 			state.currentTabIndex = value
 		},
 	}
@@ -17,4 +18,3 @@ const store = new Vuex.Store({
 
 //导出store对象
 export default store
-

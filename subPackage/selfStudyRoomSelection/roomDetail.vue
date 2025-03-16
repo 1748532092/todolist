@@ -1,7 +1,7 @@
 <template>
 	<view class="container">
 		<view @click="handleSeatClick($event)">
-			<image class="bg" src="/subPackage/selfStudyRoomSelection/static/pic_room.png" mode=""></image>
+			<image class="bg" src="../static/selfStudyRoomSelection/pic_room.png" mode=""></image>
 		</view>
 		<view class="cus-header" :style="{'min-height': navBarHeight + 'px', 'padding-top': statusBarHeight + 'px'}">
 			<image class="icon" src="/static/home/icon_back.png" @click="handleBack()"></image>
@@ -14,7 +14,7 @@
 		</view>
 
 		<view class="" v-if="show" :style="{'position': 'absolute', 'top':yLabel + 'px', 'left': xLabel + 'px'}">
-			<image style="width: 45px;height:45px" src="/subPackage/selfStudyRoomSelection/static/icon_active.png"
+			<image style="width: 45px;height:45px" src="../static/selfStudyRoomSelection/icon_active.png"
 				mode=""></image>
 			<view class="seat-text">
 				<view>已有人</view>

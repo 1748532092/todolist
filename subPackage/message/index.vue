@@ -8,7 +8,7 @@
 		<view class="message-list">
 			<view class="left">
 				<view class="item">好友消息</view>
-				<image class="arrow" src="/subPackage/message/static/icon_arrow.png" mode=""></image>
+				<image class="arrow" src="../static/message/icon_arrow.png" mode=""></image>
 			</view>
 			<view class="item">小组消息</view>
 		</view>
@@ -16,7 +16,7 @@
 		<view class="message-box">
 			<view class="message-item" v-for="(item, index) in messageList" :key="index" @click="handleDetail(index)">
 				<view class="left">
-					<image class="head" src="/subPackage/message/static/pic_head2.jpg"></image>
+					<image class="head" :src="item.headPic"></image>
 					<view class="sender">
 						<view>{{item.sender}}</view>
 						<view class="content">
@@ -46,31 +46,31 @@
 				navBarHeight: getApp().globalData.navBarHeight,
 				statusBarHeight: getApp().globalData.statusBarHeight,
 				messageList: [{
-					headPic: '',
+					headPic: '../../static/head/head (4).png',
 					sender: '晴晴',
 					time: '刚刚',
 					content: '我今天任务都完成啦',
 					unReadNum: 1
 				}, {
-					headPic: '',
+					headPic: '../../static/head/head (5).png',
 					sender: 'f789622',
 					time: '14：06',
 					content: '这周末要出去玩吗',
 					unReadNum: 10
 				}, {
-					headPic: '',
+					headPic: '../../static/head/head (6).png',
 					sender: 'nikounikou',
 					time: '14：07',
 					content: '有六级的材料吗',
 					unReadNum: 3
 				}, {
-					headPic: '',
+					headPic: '../../static/head/head (7).png',
 					sender: '你好星期八',
 					time: '14：09',
 					content: '上次真的太感谢了',
 					unReadNum: 7
 				}, {
-					headPic: '',
+					headPic: '../../static/head/head (8).png',
 					sender: 'BYE',
 					time: '14：30',
 					content: '[图片]',

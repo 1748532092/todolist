@@ -57,61 +57,61 @@
 				navBarHeight: getApp().globalData.navBarHeight,
 				statusBarHeight: getApp().globalData.statusBarHeight,
 				moduleOne: [{
-						iconPath: '/static/icon_account.png',
+						iconPath: '../static/user/icon_account.png',
 						text: '账号',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_vip.png',
+						iconPath: '../static/user/icon_vip.png',
 						text: 'VIP',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_upload.png',
+						iconPath: '../static/user/icon_upload.png',
 						text: '备份/云同步',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_room.png',
+						iconPath: '../static/user/icon_room.png',
 						text: '自习室',
 					}
 				],
 				moduleTwo: [{
-						iconPath: 'subPackage/user/static/icon_theme.png',
+						iconPath: '../static/user/icon_theme.png',
 						text: '主题选择',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_switch.png',
+						iconPath: '../static/user/icon_switch.png',
 						text: '触觉开关',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_clock.png',
+						iconPath: '../static/user/icon_clock.png',
 						text: '时钟模式',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_music.png',
+						iconPath: '../static/user/icon_music.png',
 						text: '白噪音（背景音乐）',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_personalization.png',
+						iconPath: '../static/user/icon_personalization.png',
 						text: '个性化自定义',
 					}
 				],
 				moduleThree: [{
-						iconPath: 'subPackage/user/static/icon_help.png',
+						iconPath: '../static/user/icon_help.png',
 						text: '使用帮助',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_wb.png',
+						iconPath: '../static/user/icon_wb.png',
 						text: '我们的微博',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_wx.png',
+						iconPath: '../static/user/icon_wx.png',
 						text: '微信公众号',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_problem.png',
+						iconPath: '../static/user/icon_problem.png',
 						text: '常见问题/客服',
 					},
 					{
-						iconPath: 'subPackage/user/static/icon_share.png',
+						iconPath: '../static/user/icon_share.png',
 						text: '分享给你的朋友',
 					}
 				],
@@ -139,7 +139,7 @@
 			margin: 30rpx auto;
 
 			.item {
-				height: 70rpx;
+				height: 80rpx;
 				display: flex;
 				align-items: center;
 				justify-content: space-between;
@@ -152,6 +152,7 @@
 					.icon {
 						width: 54rpx;
 						height: 54rpx;
+						margin-right: 30rpx;
 					}
 
 					.item-text {}

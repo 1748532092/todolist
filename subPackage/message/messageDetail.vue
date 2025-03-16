@@ -2,7 +2,7 @@
 	<view class="container">
 		<view class="cus-header" :style="{'min-height': navBarHeight + 'px', 'padding-top': statusBarHeight + 'px'}">
 			<image class="icon" src="/static/home/icon_back.png" @click="handleBack()"></image>
-			<image class="head" src="/subPackage/message/static/pic_head1.jpg"></image>
+			<image class="head" src="../static/message/pic_head1.jpg"></image>
 			<view class="title">晴晴</view>
 		</view>
 

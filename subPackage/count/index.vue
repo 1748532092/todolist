@@ -10,9 +10,9 @@
 		</view>
 
 		<view class="cur-date">
-			<image class="icon" src="./static/icon_arrow.png" mode="" @click="handleChange(curIndex - 1)"></image>
+			<image class="icon" src="../static/count/icon_arrow.png" mode="" @click="handleChange(curIndex - 1)"></image>
 			<view>{{curDate}}</view>
-			<image class="icon_2" src="./static/icon_arrow.png" mode="" @click="handleChange(curIndex + 1)"></image>
+			<image class="icon_2" src="../static/count/icon_arrow.png" mode="" @click="handleChange(curIndex + 1)"></image>
 		</view>
 
 		<view class="acc-data">
@@ -57,8 +57,8 @@
 						生活{{curIndex === 0 ? dayObj.live : weekObj.live}}
 					</view>
 				</view>
-				<image class="icon-pie" v-if="curIndex === 0" src="./static/icon_pie.png" mode=""></image>
-				<image class="icon-pie" v-else src="./static/icon_pie (2).png" mode=""></image>
+				<image class="icon-pie" v-if="curIndex === 0" src="../static/count/icon_pie.png" mode=""></image>
+				<image class="icon-pie" v-else src="../static/count/icon_pie (2).png" mode=""></image>
 			</view>
 		</view>
 
@@ -66,7 +66,7 @@
 			<view class="list-item">
 				<view class="list-left">
 					<view class="title">平均专注时常</view>
-					<image class="icon" src="./static/icon_clock.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_clock.png" mode=""></image>
 					<view class="title">
 						<text class="spec-data">{{curIndex === 0 ? dayObj.aveTime : weekObj.aveTime}}</text>
 						<text>分钟</text>
@@ -74,7 +74,7 @@
 				</view>
 				<view class="list-right">
 					<view class="title">连续专注时常</view>
-					<image class="icon" src="./static/icon_tomato.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_tomato.png" mode=""></image>
 					<view class="title">
 						<text
 							class="spec-data">{{curIndex === 0 ? dayObj.continuousTime : weekObj.continuousTime}}</text>
@@ -85,14 +85,14 @@
 			<view class="list-item">
 				<view class="list-left">
 					<view class="title">最早专注时间</view>
-					<image class="icon" src="./static/icon_sun.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_sun.png" mode=""></image>
 					<view class="title">
 						<text class="spec-data">{{curIndex === 0 ? dayObj.earliestTime : weekObj.earliestTime}}</text>
 					</view>
 				</view>
 				<view class="list-right">
 					<view class="title">最晚专注时间</view>
-					<image class="icon" src="./static/icon_moon.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_moon.png" mode=""></image>
 					<view class="title">
 						<text class="spec-data">{{curIndex === 0 ? dayObj.latestTime : weekObj.latestTime}}</text>
 					</view>
@@ -101,14 +101,14 @@
 			<view class="list-item">
 				<view class="list-left">
 					<view class="title">最长去的自习室</view>
-					<image class="icon" src="./static/icon_room.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_room.png" mode=""></image>
 					<view class="title">
 						<text class="spec-data">{{curIndex === 0 ? dayObj.oftenRoom : weekObj.oftenRoom}}</text>
 					</view>
 				</view>
 				<view class="list-right">
 					<view class="title">专注日记</view>
-					<image class="icon" src="./static/icon_diary.png" mode=""></image>
+					<image class="icon" src="../static/count/icon_diary.png" mode=""></image>
 					<view class="title">
 						<text class="spec-data">{{curIndex === 0 ? dayObj.focusDiary : weekObj.focusDiary}}</text>
 						<text>篇</text>
@@ -164,7 +164,7 @@
 					latestTime: '23:30',
 					oftenRoom: '大学生6班',
 					focusDiary: '18'
-				}
+				},
 			}
 		},
 		mounted() {

@@ -9,7 +9,7 @@
 		<view class="my-group">
 			<view class="title">我的小组</view>
 			<view class="group-box" @click="toGroupDetail()">
-				<image class="head" src="/static/home/pic_group_head.jpg" mode=""></image>
+				<image class="head" src="/static/head/head.png" mode=""></image>
 				<view class="center">
 					<view class="group-name">V我50</view>
 					<view class="content">
@@ -25,7 +25,7 @@
 				</view>
 			</view>
 			<view class="group-box">
-				<image class="head" src="/static/home/pic_group_head.jpg" mode=""></image>
+				<image class="head" src="/static/head/head.png" mode=""></image>
 				<view class="center">
 					<view class="group-name">决战6级</view>
 					<view class="content">
