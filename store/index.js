@@ -10,7 +10,6 @@ const store = new Vuex.Store({
 	},
 	mutations: {
 		CHANGE_TAB(state, value) {
-			console.log('aa')
 			state.currentTabIndex = value
 		},
 	}

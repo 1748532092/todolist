@@ -7,6 +7,12 @@
 
 <script>
 	export default {
+		data() {
+			return {
+				navBarHeight: getApp().globalData.navBarHeight,
+				statusBarHeight: getApp().globalData.statusBarHeight,
+			}
+		},
 		methods: {
 			handleBack () {
 				uni.navigateBack({})
@@ -31,6 +37,7 @@
 			top: 50rpx;
 			left: 30rpx;
 			z-index: 2;
+			padding-top: 30rpx;
 		}
 	}
 </style>
